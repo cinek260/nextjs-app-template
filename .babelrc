@@ -1,0 +1,31 @@
+{
+    "presets": [
+        "next/babel"
+    ],
+    "env": {
+        "test": {
+            "presets": [
+                "env",
+                "next/babel"
+            ]
+        }
+    },
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "alias": {
+                    "actions": "./data/actions",
+                    "reducers": "./data/reducers",
+                    "sagas": "./data/sagas",
+                    "types": "./data/types",
+                    "lib": "./lib",
+                    "routes": "./routes",
+                    "i18n": "./i18n",
+                    "utils": "./utils",
+                    "components": "./components"
+                }
+            }
+        ]
+    ]
+}

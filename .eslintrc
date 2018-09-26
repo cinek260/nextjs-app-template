@@ -1,0 +1,37 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error"
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.jsx"
+            ],
+            "rules": {
+                "react/react-in-jsx-scope": "off",
+                "react/jsx-one-expression-per-line": "off",
+                "jsx-a11y/anchor-is-valid": "off",
+                "react/jsx-indent": "off",
+                "react/jsx-closing-tag-location": "off"
+            }
+        },
+        {
+            "files": [
+                "*.js",
+                "*.jsx"
+            ],
+            "rules": {
+                "import/no-unresolved": "off"
+            }
+        }
+    ]
+}

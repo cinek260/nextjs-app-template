@@ -1,0 +1,4 @@
+{
+  "hello": "From common translations",
+  "missingKey": "Missing keys will fallback to default language"
+}
